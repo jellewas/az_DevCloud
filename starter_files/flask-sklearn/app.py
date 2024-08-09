@@ -45,4 +45,4 @@ def predict():
     return jsonify({'prediction': prediction})
 
 if __name__ == "__main__":
-    app.run(host=, port=433, debug=True)
+    app.run(host=${{ steps.deploy-to-webapp.outputs.webapp-url }}, port=433, debug=True)
